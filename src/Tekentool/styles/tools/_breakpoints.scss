@@ -1,0 +1,35 @@
+// // @import '~foundation-sites/scss/foundation';
+
+// $breakpoints: (
+//   tiny: 0,
+//   small: 400px,
+//   medium: 760px,
+//   large: 1024px,
+//   xlarge: 1200px,
+//   xxlarge: 1400px,
+//   xxxlarge: 1920px,
+//   massive: 2200px,
+// );
+
+// .debug-breakpoints {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   font-size: $base-sm;
+//   background-color: rgba(255,255,255,0.7);
+//   z-index: 99;
+//   padding: 5px;
+// }
+// .debug-breakpoint { 
+//   display: none;
+//   padding: 0;
+// }
+
+// @include breakpoint(tiny only) { .tiny { display: block; } }
+// @include breakpoint(small only) { .small { display: block; } }
+// @include breakpoint(medium only) { .medium { display: block; } }
+// @include breakpoint(large only) { .large { display: block; } }
+// @include breakpoint(xlarge only) { .xlarge { display: block; } }
+// @include breakpoint(xxlarge only) { .xxlarge { display: block; } }
+// @include breakpoint(xxxlarge only) { .xxxlarge { display: block; } }
+// @include breakpoint(massive only) { .massive { display: block; } }

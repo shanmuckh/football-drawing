@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+.Legend {
+  position: absolute;
+  max-width: $appWidth;
+  max-height: $appHeight;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: $z20;
+  padding: $base-xl;
+  opacity: 0;
+  visibility: hidden;
+  transition: all $timingShort $ease;
+}
+
+.Legend.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Legend_Header {
+  margin-bottom: $base-xl;
+}
+
+.Legend_Close-btn {
+  position: absolute;
+  top: $base-md;
+  right: $base-md;
+  padding: $base-md;
+  transition: transform $timing $ease;
+  will-change: transform;
+
+  * {
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.25)
+  }
+}
+
+.Legend_List {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Legend_List-item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $base-sm 0;
+  margin-bottom: $base-lg * 2;
+  flex-basis: 15%; // ensures 6 items per row
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: $z-1;
+  }
+  
+  &::before {
+    left: 0;
+    background: linear-gradient(to bottom, #91D1AB 0%,#91D1AB 50%,#76c294 50%,#76c294 100%);
+  }
+  &::after {
+    background-color: $black;
+    right: 0;
+    width: 1px;
+    opacity: 0.1;
+  }
+
+  &:last-child {
+    &::after {
+      content: none;
+    }
+  }
+
+}
+
+.Legend_Caption {
+  position: absolute;
+  bottom: -$base-lg;
+}

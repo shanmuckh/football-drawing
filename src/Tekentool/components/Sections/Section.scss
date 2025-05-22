@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.Section {
+  padding-bottom: $base-xl;
+}
+
+.Section-heading {
+  color: $blue;
+  margin-bottom: $base-sm;
+  font-family: $baron-regular;
+  font-size: 1.125rem;
+}
+
+.Section_Asset-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Section_inner {
+  background-color: $grey;
+  border: 1px solid darken($grey, 10%);
+  padding: $base-lg;
+  padding-bottom: 0;
+}
+
+.Section_Inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $base-md;
+}
+
+.Section_Line-Btns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 70px);
+  grid-gap: 20px;
+}
+
+.Section_Field-Btns {
+  padding-bottom: $base-sm;
+  display: block;
+  font-size: 0.75rem;
+  color: $grey-darker;
+  opacity: 0.5;
+}
+

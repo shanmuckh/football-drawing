@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+@import '../../styles/tools/mixins.scss';
+
+// html {
+//   //background-color: $blue;
+// }
+
+body {
+  overflow-y: scroll;
+  font-family: $font;
+  color: $black;
+  background-color: darken($grey, 50%);
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" 1, "onum" 1, "liga" 1;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  -webkit-font-smoothing: antialiased;
+  //@include rem('line-height', 24px);
+}
+
+::-moz-selection {
+  background-color: rgba($black, 0.15);
+  text-shadow: none;
+}
+
+::selection {
+  background-color: rgba($black, 0.15);
+  text-shadow: none;
+}
+
+a {
+  color: $black;
+  transition: text-decoration-color $timingShort linear, color $timingShort linear;  // dont use 'all' its too broad for an <a/>
+  will-change: text-decoration-color, color;
+  text-decoration-color: currentColor;
+  word-break: break-word;
+  hyphens: auto;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: transparent;
+    outline: 0;
+  }
+}
+
+p,
+label {
+  padding: 0 0 $base-md;
+  margin: 0;
+  line-height: 1.5;
+  // hyphens: auto;
+  // word-break: break-word;
+  // word-wrap: break-word;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  //font-feature-settings: 'dlig' 0, 'liga' 1, 'lnum' 1, 'kern' 1;
+  display: block;
+  font-weight: inherit;
+  //hyphens: auto;
+}
+
+strong {
+  // font-family: $hapticB;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid $black;
+}

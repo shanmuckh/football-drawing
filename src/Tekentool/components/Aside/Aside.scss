@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.Aside_Toggle {
+  position: fixed;
+  bottom: $base-xl;
+  left: $base-xl;
+  z-index: $z10;
+  background-color: $blue-light;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.Aside {
+  padding: $base-xl;
+  background-color: $white;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  visibility: hidden;
+  z-index: $z1;
+  transition: all $timing $ease;
+  direction: rtl;
+  // will-change: transform, visibility; // wtf, this breaks the drag positioning
+}
+
+.Aside_Inner {
+  direction: ltr;
+}
+
+.Aside--visible {
+  visibility: visible;
+  transform: none;
+}
+
+@media (min-width: $screen-lg) {
+  .Aside_Toggle {
+    display: none;
+  }
+
+  .Aside {
+    max-height: $appHeight;
+    position: static;
+    height: inherit;
+    top: inherit;
+    transform: none;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,16 @@
+// https://css-tricks.com/font-display-masses/
+@font-face {
+  font-family: 'baron-regular';
+  font-display: fallback; // swap
+  src:
+    url('./fonts/baron-regular.woff2') format('woff2'),
+    url('./fonts/baron-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'baron-bold';
+  font-display: fallback; // swap
+  src:
+    url('./fonts/baron-bold.woff2') format('woff2'),
+    url('./fonts/baron-bold.woff') format('woff');
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="6 -4 32 25" version="1.1">
+<defs>
+<linearGradient x1="50%" y1="63.4934962%" x2="100%" y2="63.4934962%" id="linearGradient-1">
+  <stop stop-color="#000000" stop-opacity="0" offset="0%"/>
+  <stop stop-color="#000000" offset="100%"/>
+</linearGradient>
+
+  <polygon id="path-2" points="7 15 8 15 8 12 9 9 10 9 10 6 12 0 14 0 16 6 16 9 17 9 18 12 18 15 19 15 24 15 26 21 0 21 2 15"/>
+    <radialGradient id="shadow" gradientUnits="userSpaceOnUse" cx="13" cy="8" r="20">
+      <stop offset="0.2" style="stop-color:#000;stop-opacity: 0.25"></stop>
+      <stop offset="1" style="stop-color:#000;stop-opacity: 0"></stop>
+    </radialGradient>
+</defs>
+
+<g transform="translate(-284, -244)">
+  <g transform="translate(165, 95)">
+  <g >
+  <g transform="translate(40, 16)">
+  <g transform="translate(85, 129)">
+  <ellipse cx="10" cy="23" rx="20" ry="6" style="fill: url(#shadow)"></ellipse>
+  <g id="js-main-color">
+    <use fill="#F56200" fill-opacity="1" xlink:href="#path-2"/>
+  </g>
+  <polygon fill="#FFFFFF" points="7 15 8 12 18 12 19 15"/>
+  <polygon fill="#FFFFFF" points="9 9 17 9 16 6 10 6"/>
+  </g>
+  </g>
+  </g>
+  </g>
+</g>
+
+</svg>

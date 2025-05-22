@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.Editor {
+  background-color: $grey;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: $base-xs;
+  padding-left: $base-lg;
+  display: flex;
+  z-index: $z10;
+  align-items: center;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: all $timing $ease;
+  will-change: transform, visibility;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Editor--visible {
+  visibility: visible;
+  transform: none;
+}
+
+.Editor_Caption {
+  color: $blue;
+  flex: 1;
+}
+
+.Editor_Input-wrapper {
+  background-color: $white;
+  padding: $base-xs;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.Editor_Input-name {
+  font-weight: bold;
+  padding-right: $base-md;
+}
+
+.Editor_Input {
+  background-color: $grey;
+  border: 1px solid $grey-dark;
+  max-width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.Button--Editor {
+  color: $grey-darker;
+  font-weight: bold;
+  background-color: $white;
+  padding: $base-sm;
+  max-height: 50px;
+  margin-left: $base-xs;
+  transition: color $timingShort $ease;
+  will-change: color;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}
+
+.Editor_Icon {
+  margin-left: $base-xs;
+}
+
+@media (min-width: $screen-lg) {
+  .Editor {
+    position: absolute;
+  }
+}

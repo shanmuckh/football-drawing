@@ -1,0 +1,96 @@
+@import '../../styles/variables.scss';
+
+.Draggable-item-wrap {
+  display: flex;
+  align-self: flex-end; // bottom align the images
+  margin-right: $base-lg;
+  margin-bottom: $base-lg;
+  
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+  cursor: -webkit-grab;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    transition: transform $timingShort, opacity $timingShort;
+    
+    will-change: transform, opacity, top, left;
+    pointer-events: none;
+    cursor: -webkit-grab;
+  }
+}
+
+.Asset--shirt {
+  width: 42px;
+  height: 52px;
+  svg {
+    width: 42px;
+    height: 52px;
+  }
+}
+.Asset--cone {
+  width: 32px;
+  height: 25px;
+  svg {
+    width: 32px;
+    height: 25px;
+  }
+}
+.Asset--goal-01 {
+  width: 92px;
+  height: 36px;
+  svg {
+    width: 92px;
+    height: 36px;
+  }
+}
+.Asset--goal-02 {
+  width: 85px;
+  height: 24px;
+  svg {
+    width: 85px;
+    height: 24px;
+  }
+}
+.Asset--goal-03 {
+  width: 48px;
+  height: 24px;
+  svg {
+    width: 48px;
+    height: 24px;
+  }
+}
+.Asset--ball {
+  width: 32px;
+  height: 32px;
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+.Asset--witches-hat {
+  width: 32px;
+  height: 25px;
+  svg {
+    width: 32px;
+    height: 25px;
+  }
+}
+
+.Controls_Img--base {
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+}
+
+.Controls_Img--active {
+  opacity: 1;
+  transform: scale(1.5);
+}

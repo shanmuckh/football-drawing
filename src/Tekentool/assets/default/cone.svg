@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="6 0 34 26" xml:space="preserve" enable-background="new 0 0 34 26">
+<defs>
+
+  <linearGradient id="gradient">
+    <stop offset="0.1" style="stop-color:#000;stop-opacity: 0"></stop>
+    <stop offset="1" style="stop-color:#000;stop-opacity: 0.15"></stop>
+  </linearGradient>
+
+  <linearGradient id="gradient-shadow">
+    <stop style="stop-color:#000;stop-opacity: 0.2"></stop>
+  </linearGradient>
+
+  <radialGradient id="shadow" gradientUnits="userSpaceOnUse" cx="14" cy="5.5" r="19">
+    <stop offset="0.2" style="stop-color:rgb(0,0,0);stop-opacity: 0.35"></stop>
+    <stop offset="1" style="stop-color:rgb(0,0,0);stop-opacity: 0"></stop>
+  </radialGradient>
+
+</defs>
+
+  <g id="g1" transform="translate(-340, -242)">
+  <g id="g2" transform="translate(165, 95)">
+
+  <g id="g3" transform="translate(40, 16)">
+  <g id="g4" transform="translate(141, 134)">
+  
+  <ellipse cx="14" cy="17" rx="20" ry="6" style="fill: url(#shadow)"></ellipse>
+  
+  <path id="js-underline" transform="translate(0, 13)" fill="#333" d="M27.8,0C27.9,0.3,28,0.7,28,1.1c0,2.8-6.3,5-14,5S0,3.8,0,1.1C0,0.7,0.1,0.3,0.2,0 C1.5,2.3,7.2,4.1,14,4.1S26.5,2.3,27.8,0z"/>
+
+  
+  <path style="fill: url(#gradient-shadow)" transform="translate(0, 13)" d="M27.8,0C27.9,0.3,28,0.7,28,1.1c0,2.8-6.3,5-14,5S0,3.8,0,1.1C0,0.7,0.1,0.3,0.2,0 C1.5,2.3,7.2,4.1,14,4.1S26.5,2.3,27.8,0z"/>
+  <path style="fill: url(#gradient)" d="M1 10.5l8.5-8c0.9-0.6 2.5-1 4.5-1s3.6 0.4 4.5 1l8.5 8c0.7 0.6 1 1.3 1 2 0 2.8-6.3 5-14 5s-14-2.2-14-5C0 11.8 0.3 11.1 1 10.5z"/>
+  <path id="js-main-color" fill="#ddd" d="M1 10.5l8.5-8c0.9-0.6 2.5-1 4.5-1s3.6 0.4 4.5 1l8.5 8c0.7 0.6 1 1.3 1 2 0 2.8-6.3 5-14 5s-14-2.2-14-5C0 11.8 0.3 11.1 1 10.5z"/>
+  <ellipse fill="#000" transform="translate(0,1.5)" fill-opacity="0.45" cx="14" cy="3" rx="4" ry="2"/>
+  </g>
+  </g>
+  </g>
+
+  </g>
+</svg>

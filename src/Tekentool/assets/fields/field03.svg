@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95px" height="68px" viewBox="0 0 95 68" version="1.1">
+<defs>
+<linearGradient x1="50%" y1="100%" x2="50%" y2="26.9869942%" id="linearGradient-1">
+<stop stop-color="rgb(187,219,187)" stop-opacity="0" offset="0%"/>
+<stop stop-color="rgb(187,219,187)" offset="100%"/>
+</linearGradient>
+<rect id="path-2" x="0" y="0" width="83" height="56"/>
+<filter x="-12.7%" y="-13.4%" width="125.3%" height="137.5%" filterUnits="objectBoundingBox" id="filter-3">
+<feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+<feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+<feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"/>
+</filter>
+</defs>
+<g id="Drawing-tool" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="exercise---scroll" transform="translate(-510.000000, -527.000000)">
+<g id="drawing-tool" transform="translate(165.000000, 95.000000)">
+<g id="tools">
+<g id="velden" transform="translate(40.000000, 368.000000)">
+<g id="veld" transform="translate(311.000000, 67.000000)">
+<g id="field">
+<use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"/>
+<use fill="#91D1AB" fill-rule="evenodd" xlink:href="#path-2"/>
+<use fill-opacity="0.3" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2" mix-blend-mode="screen"/>
+</g>
+<rect id="strokes" fill="#009F48" opacity="0.2" x="2" y="2" width="79" height="6" mix-blend-mode="multiply"/>
+<rect id="strokes" fill="#009F48" opacity="0.2" x="2" y="16" width="79" height="8" mix-blend-mode="multiply"/>
+<rect id="strokes" fill="#009F48" opacity="0.2" x="2" y="32" width="79" height="8" mix-blend-mode="multiply"/>
+<rect id="strokes" fill="#009F48" opacity="0.2" x="2" y="48" width="79" height="6" mix-blend-mode="multiply"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

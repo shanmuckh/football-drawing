@@ -1,0 +1,82 @@
+html {
+  min-height: 100%;
+  font-size: 100%; // is 16px, which is the browser default
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.fixed-error {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: $green;
+  color: $white;
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  z-index: $z99;
+  margin: auto;
+}
+
+// https://adactio.com/journal/10019
+a, button, input, select, textarea, label, summary {
+  touch-action: manipulation;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+input, textarea, select {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+main {
+  display: block; // ie11
+}
+
+// .Debug {
+//   position: fixed;
+//   bottom: 0;
+//   right: 0;
+//   color: $white;
+//   background-color: rgba(0, 0, 0, 0.6);
+//   padding: 0.5rem;
+//   pointer-events: none;
+// }
+
+
+

@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "Tekentool",
+  "main": "./Tekentool.js"
+}

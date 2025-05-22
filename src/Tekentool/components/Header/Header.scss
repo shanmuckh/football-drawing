@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.Header {
+  background-color: $grey;
+  padding-left: $base-xl;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: $z10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header_Title {
+  padding: $base-md 0;
+  font-family: $baron-bold;
+}
+
+.Header_Btn {
+  padding: $base-md $base-xl;
+  color: $blue;
+  font-weight: bold;
+  position: relative;
+  transition: color $timingShort linear;
+  will-change: color;
+  z-index: $z1;
+  padding-left: $base-md;
+  margin-left: $base-md;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    transform: skew(-10deg);
+    position: absolute;
+    left: -$base-md;
+    top: 0;
+    bottom: 0;
+    transition: all $timing $ease;
+    will-change: transform, color;
+  }
+
+  &::before {
+    width: 130%;
+    z-index: $z-1;
+  }
+
+  &::after {
+    top: $base-xs;
+    bottom: $base-xs;
+    width: 1px;
+    background-color: $grey-dark;
+  }
+  
+  &:first-child,
+  &:last-child {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.Header_Btn--primary {
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+    
+    &::before {
+      transform: translateX(100%);
+    }
+  }
+
+  &::before {
+    background-color: $orange;
+  }
+
+  svg {
+    margin-left: $base-xs * 0.5;
+  }  
+}

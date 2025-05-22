@@ -1,0 +1,465 @@
+# Default application configuration that all configurations inherit from.
+# Docs: https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+
+scss_files: '**/*.scss'
+plugin_directories: ['.scss-linters']
+exclude: ['node_modules/**/*.scss', 'vendor/**/*.scss', 'assets/**/*.scss']
+
+# List of gem names to load custom linters from (make sure they are already
+# installed)
+plugin_gems: []
+
+# Default severity of all linters.
+severity: warning
+
+linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
+  BemDepth:
+    enabled: false
+    max_elements: 1
+
+  BorderZero:
+    enabled: true
+    convention: zero # or `none`
+
+  ChainedClasses:
+    enabled: false
+
+  ColorKeyword:
+    enabled: true
+
+  ColorVariable:
+    enabled: true
+
+  Comment:
+    enabled: true
+    style: silent
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: false
+
+  DisableLinterReason:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: same_line # or 'new_line'
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+
+  EmptyRule:
+    enabled: true
+
+  ExtendDirective:
+    enabled: false
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: long # or 'short'
+
+  HexNotation:
+    enabled: true
+    style: uppercase # or 'lowecase'
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: true
+
+  ImportantRule:
+    enabled: true
+
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: false
+
+  Indentation:
+    enabled: true
+    allow_non_nested_indentation: false
+    character: space # or 'tab'
+    width: 2
+
+  LeadingZero:
+    enabled: true
+    style: include_zero # or 'exclude_zero'
+
+  MergeableSelector:
+    enabled: false
+    force_nesting: false
+
+  NameFormat:
+    enabled: false
+    allow_leading_underscore: true
+    convention: ^(((is|has){1}-[a-z]+)|([A-Z]{1}[a-z]+)+\-{0,2}([a-z]+[A-Z]?[a-z]*)?((\-[a-z]+[A-Z]?[a-z]*)?(\-{2})([a-z]+[A-Z]?[a-z]*)*)?)$
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+    ignore_parent_selectors: false
+
+  PlaceholderInExtend:
+    enabled: true
+
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
+
+  PropertyCount:
+    enabled: false
+    include_nested: false
+    max_properties: 10
+
+  PropertySortOrder:
+    enabled: true
+    ignore_unspecified: false
+    min_properties: 2
+    separate_groups: false
+    order:
+    order:
+      - position
+      - z-index
+      - top
+      - right
+      - bottom
+      - left
+      - display
+      - visibility
+      - float
+      - clear
+      - overflow
+      - overflow-x
+      - overflow-y
+      - clip
+      - zoom
+      - grid-area
+      - grid-row
+      - grid-row-start
+      - grid-row-end
+      - grid-column
+      - grid-column-start
+      - grid-column-end
+      - justify-self
+      - align-self
+      - place-self
+      - grid
+      - grid-template
+      - grid-template-rows
+      - grid-template-columns
+      - grid-template-areas
+      - grid-gap
+      - grid-row-gap
+      - grid-column-gap
+      - justify-items
+      - place-items
+      - place-content
+      - grid-auto-rows
+      - grid-auto-columns
+      - grid-auto-flow
+      - flex
+      - flex-grow
+      - flex-shrink
+      - flex-basis
+      - align-self
+      - order
+      - flex-flow
+      - flex-direction
+      - flex-wrap
+      - justify-content
+      - align-items
+      - align-content
+      - box-sizing
+      - width
+      - min-width
+      - max-width
+      - height
+      - min-height
+      - max-height
+      - margin
+      - margin-top
+      - margin-right
+      - margin-bottom
+      - margin-left
+      - padding
+      - padding-top
+      - padding-right
+      - padding-bottom
+      - padding-left
+      - table-layout
+      - empty-cells
+      - caption-side
+      - border-spacing
+      - border-collapse
+      - list-style
+      - list-style-type
+      - list-style-position
+      - list-style-image
+      - content
+      - quotes
+      - counter-reset
+      - counter-increment
+      - resize
+      - cursor
+      - user-select
+      - nav-index
+      - nav-up
+      - nav-right
+      - nav-down
+      - nav-left
+      - transform
+      - transform-origin
+      - animation
+      - animation-name
+      - animation-duration
+      - animation-play-state
+      - animation-timing-function
+      - animation-delay
+      - animation-iteration-count
+      - animation-direction
+      - font
+      - font-family
+      - font-size
+      - font-weight
+      - font-style
+      - font-variant
+      - font-size-adjust
+      - font-stretch
+      - font-effect
+      - font-emphasize
+      - font-emphasize-position
+      - font-emphasize-style
+      - font-feature-settings
+      - font-variant-numeric
+      - font-display
+      - src
+      - line-height
+      - text-align
+      - text-align-last
+      - vertical-align
+      - white-space
+      - text-decoration
+      - text-decoration-skip
+      - text-decoration-color
+      - text-emphasis
+      - text-emphasis-color
+      - text-emphasis-style
+      - text-emphasis-position
+      - text-indent
+      - text-justify
+      - letter-spacing
+      - word-spacing
+      - text-outline
+      - text-transform
+      - text-rendering
+      - text-wrap
+      - text-overflow
+      - text-overflow-ellipsis
+      - text-overflow-mode
+      - word-wrap
+      - word-break
+      - tab-size
+      - hyphens
+      - speak
+      - pointer-events
+      - opacity
+      - color
+      - border
+      - border-width
+      - border-style
+      - border-color
+      - border-top
+      - border-top-width
+      - border-top-style
+      - border-top-color
+      - border-right
+      - border-right-width
+      - border-right-style
+      - border-right-color
+      - border-bottom
+      - border-bottom-width
+      - border-bottom-style
+      - border-bottom-color
+      - border-left
+      - border-left-width
+      - border-left-style
+      - border-left-color
+      - border-radius
+      - border-top-left-radius
+      - border-top-right-radius
+      - border-bottom-right-radius
+      - border-bottom-left-radius
+      - border-image
+      - border-image-source
+      - border-image-slice
+      - border-image-width
+      - border-image-outset
+      - border-image-repeat
+      - outline
+      - outline-width
+      - outline-style
+      - outline-color
+      - outline-offset
+      - background
+      - background-color
+      - background-image
+      - background-repeat
+      - background-attachment
+      - background-position
+      - background-position-x
+      - background-position-y
+      - background-clip
+      - background-origin
+      - background-size
+      - fill
+      - backface-visibility
+      - box-decoration-break
+      - box-shadow
+      - text-shadow
+      - transition
+      - transition-delay
+      - transition-timing-function
+      - transition-duration
+      - transition-property
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+    disabled_properties: []
+
+  PropertyUnits:
+    enabled: true
+    global: [
+      'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
+      'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
+      'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
+      'deg', 'grad', 'rad', 'turn',            # Angle
+      'ms', 's',                               # Duration
+      'Hz', 'kHz',                             # Frequency
+      'dpi', 'dpcm', 'dppx',                   # Resolution
+      '%']                                     # Other
+    properties: {}
+
+  PseudoElement:
+    enabled: true
+
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 3
+
+  SelectorFormat:
+    enabled: true
+    convention: ^(((is|has){1}-[a-z]+)|([A-Z]{1}[a-z]+)+\-{0,2}([a-z]+[A-Z]?[a-z]*)?((\-[a-z]+[A-Z]?[a-z]*)?(\-{2})([a-z]+[A-Z]?[a-z]*)*)?)$
+
+  Shorthand:
+    enabled: true
+    allowed_shorthands: [1, 2, 3, 4]
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: true
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space'
+
+  SpaceAfterComment:
+    enabled: false
+    style: one_space # or 'no_space', or 'at_least_one_space'
+    allow_empty_comments: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceAfterVariableColon:
+    enabled: false
+    style: one_space # or 'no_space', 'at_least_one_space' or 'one_space_or_newline'
+
+  SpaceAfterVariableName:
+    enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space # or 'at_least_one_space', or 'no_space'
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space # or 'new_line'
+    allow_single_line_padding: false
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: false
+    style: single_quotes # or double_quotes
+
+  TrailingSemicolon:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+
+  TrailingZero:
+    enabled: false
+
+  TransitionAll:
+    enabled: false
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: false
+
+  UrlFormat:
+    enabled: true
+
+  UrlQuotes:
+    enabled: false
+
+  VariableForProperty:
+    enabled: false
+    properties: []
+
+  VendorPrefix:
+    enabled: true
+    identifier_list: base
+    additional_identifiers: []
+    excluded_identifiers: []
+
+  ZeroUnit:
+    enabled: false
+
+  Compass::*:
+    enabled: false

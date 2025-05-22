@@ -1,0 +1,120 @@
+@mixin placeholder {
+  color: pink;
+  //transition: color $timingShort linear;
+  //will-change: color;
+  //font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+  @include placeholder;
+}
+
+::-moz-placeholder {
+  @include placeholder;
+}
+
+:-ms-input-placeholder {
+  @include placeholder;
+}
+
+::placeholder {
+  @include placeholder;
+}
+
+// get rid of the (x) which chrome adds to search inputs
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+// hide the placeholder text on focus
+input:focus::-webkit-input-placeholder { color: pink }
+input:focus::-moz-placeholder { color: pink }/* FF 19+ */
+input:focus:-ms-input-placeholder { color: pink } /* IE 10+ */
+
+
+input {
+  //caret-color: $green;
+  color: $black;
+  //border: 2px solid transparent;
+  //transition: border-color $timing $ease;
+  //will-change: border-color;
+  -webkit-appearance: none;
+
+  &:focus {
+    outline: 0;
+    //border-color: $green;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+// https://codepen.io/triss90/pen/XNEdRe?editors=1100
+.Label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: $base-md * 2.5;
+  padding-bottom: 0;
+  margin-bottom: $base-md;
+
+  &::before {
+    content: '';
+    // box-shadow: inset 0 0 0 3px transparent;
+    //background: $blue;
+    // border-radius: 100%;
+    border: 2px solid $black;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: $base-xs * 0.5;
+    left: 0;
+    transition: all $timingShort $ease;
+    will-change: transform, border-color, box-shadow;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+
+  &:hover + .Label::before {
+    // background-color: darken($blue, 15%);
+    // box-shadow: inset 0 0 0 3px $blue;
+  }
+
+  // &:active + .Label::before {
+  //   transform: $activeButtonPressDeep;
+  // }
+
+  &:checked + .Label::before {
+    background-color: $blue;
+    // box-shadow: inset 0 0 0 3px $blue;
+  }
+
+  // &:focus + .Label::before {
+  //   border-color: $grey-light;
+  // }
+
+  // &:disabled + .Label::before {
+  //   box-shadow: inset 0 0 0 4px $blue;
+  //   border-color: darken($blue, 25%);
+  //   background: darken($blue, 25%);
+  // }
+
+  // + .Label {
+  //   &:empty {
+  //     &:before {
+  //       margin-right: 0;
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,74 @@
+// BASE MEASUREMENT
+$baseline-px: 16px;
+
+// this must also match whats in options.js
+$canvasWidth: 615px;
+$canvasHeight: 630px;
+
+$appHeight: 690px;
+$appWidth: 1110px;
+
+$shirtWidth: 42px;
+$shirtHeight: 52px;
+
+
+// SPACING - PADDING/MARGIN
+$base-xs: 0.75rem;
+$base-sm: 1rem;
+
+$base-md: 1.25rem;
+$base-lg: 1.75rem;
+$base-xl: 2.5rem;
+
+
+// COLOURS
+$orange: #F36C21;
+$green: #0ae37a;
+$green-dark: #13be6b;
+
+$blue-light: #CAECF6;
+$blue: #253780;
+
+
+// SHADES
+$white: #fff;
+
+$grey: #f8f8f8;
+$grey-dark: #DDDDDD;
+$grey-darker: #333;
+$black: #000;
+
+// TRANSITION LENGTHS
+$timingShort: 150ms;
+$timing: 300ms;
+$timingLong: 400ms;
+
+$baron-regular: 'baron-regular', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+$baron-bold: 'baron-bold', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+$font: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Open Sans', 'Arial', sans-serif;
+
+
+// TRANSITION TIMING FUNCTIONS
+$easeInOutCubic: cubic-bezier(0.65, 0.05, 0.14, 1);
+$ease: $easeInOutCubic;
+
+
+// BREAKPOINTS
+$screen-tiny: 0;
+$screen-sm: 400px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+$screen-xxxl: 1920px;
+$screen-massive: 2200px;
+
+
+// Z index
+$z-1: -1;
+$z0: 0;
+$z1: 1;
+$z10: 10;
+$z20: 20;
+$z30: 30;
+$z99: 90210;

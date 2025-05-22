@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="31" viewBox="0 0 86 31" version="1.1">
+<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g transform="translate(-236.000000, -454.000000)">
+<g transform="translate(165.000000, 95.000000)">
+<g transform="translate(40.000000, 227.000000)">
+<g transform="translate(31.000000, 132.000000)">
+<path d="M3 31L32 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M11 31L40 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M19 31L48 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M27 31L56 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M35 31L64 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M43 31L72 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M51 31L80 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M2 24C2 24 9.33 16.67 24 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M59 31C59 31 67.33 22.67 84 6" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M67 31C67 31 72.67 25.33 84 14" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M75 31C75 31 78 28 84 22" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M2 16C2 16 6.67 11.33 16 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M84 16C84 16 79.33 11.33 70 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M84 24C84 24 76.67 16.67 62 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M83 31C83 31 73.33 21.33 54 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M75 31C75 31 65.33 21.33 46 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M67 31C67 31 57.33 21.33 38 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M59 31C59 31 49.33 21.33 30 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M51 31C51 31 41.33 21.33 22 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M43 31C43 31 33.33 21.33 14 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M35 31C35 31 25.33 21.33 6 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M27 31C27 31 18.67 22.67 2 6" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M19 31C19 31 13.33 25.33 2 14" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M11 31C11 31 8 28 2 22" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M2 8C2 8 4 6 8 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path d="M84 8C84 8 82 6 78 2" stroke-opacity="0.85" stroke="#DDDDDD"/>
+<path id="js-main-color" d="M3 0L83 0C84.66 0 86 1.34 86 3L86 31 83 31 83 3 3 3 3 31 0 31 0 3C0 1.34 1.34 0 3 0Z" fill="#FFFFFF"/>
+<polygon  fill="#F2F2F2" points="3 31 2 31 2 2 84 2 84 31 83 31 83 3 3 3"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

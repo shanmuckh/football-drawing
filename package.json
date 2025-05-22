@@ -1,64 +1,138 @@
 {
-  "name": "r3f-starter",
+  "name": "drawing-tool",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
-    "@react-spring/three": "^9.0.0-rc.3",
-    "@testing-library/jest-dom": "^5.11.2",
-    "@testing-library/react": "^10.4.8",
-    "@testing-library/user-event": "^12.1.0",
-    "drei": "^0.0.71",
-    "glsl-noise": "^0.0.0",
-    "lodash.throttle": "^4.1.1",
-    "postprocessing": "^6.16.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-postprocessing": "^1.1.4",
-    "react-scripts": "3.4.1",
-    "react-three-fiber": "5.0.0-beta.11",
-    "react-three-gui": "^0.1.5",
-    "three": "^0.119.1",
-    "use-cannon": "^0.5.0",
-    "use-sound": "^1.0.2",
-    "use-throttle": "0.0.3"
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/runtime": "^7.0.0-beta.49",
+    "autoprefixer": "7.2.5",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "22.1.0",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-plugin-named-asset-import": "1.0.0-next.66cc7a90",
+    "babel-preset-react-app": "4.0.0-next.66cc7a90",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "2.3.0",
+    "css-loader": "0.28.9",
+    "dotenv": "5.0.0",
+    "dotenv-expand": "4.2.0",
+    "draw-svg-path": "^2.0.1",
+    "eslint": "4.15.0",
+    "eslint-config-react-app": "3.0.0-next.66cc7a90",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0",
+    "extract-text-webpack-plugin": "3.0.2",
+    "fabric": "^2.3.3",
+    "file-loader": "^1.1.11",
+    "fs-extra": "5.0.0",
+    "graphql": "0.12.3",
+    "graphql-tag": "2.6.1",
+    "html-webpack-plugin": "2.30.1",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "22.1.2",
+    "loader-utils": "^1.1.0",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.10",
+    "promise": "8.0.1",
+    "raf": "3.4.0",
+    "react": "^16.4.1",
+    "react-dev-utils": "6.0.0-next.66cc7a90",
+    "react-dom": "^16.4.1",
+    "resolve": "1.6.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "0.19.1",
+    "svg-path-properties": "^0.4.4",
+    "svgr": "^1.10.0",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "thread-loader": "^1.1.5",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "0.6.2",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.11.0",
+    "webpack-manifest-plugin": "1.3.2",
+    "whatwg-fetch": "^2.0.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "prettier": {
-    "tabWidth": 2
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged --pattern \"**/*.*(js)\""
-    }
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "lib": "babel src --out-dir lib --copy-files --presets=es2015,react,stage-0",
+    "flow:start": "$(yarn bin)/flow && node scripts/start.js",
+    "flow": "$(yarn bin)/flow",
+    "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "customize-cra": "^1.0.0",
-    "customize-cra-react-refresh": "^1.1.0",
-    "glslify-loader": "^2.0.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "raw-loader": "^4.0.1",
-    "react-app-rewired": "^2.1.6"
-  }
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "flow-bin": "^0.73.0",
+    "flow-typed": "^2.4.0",
+    "node-sass": "^4.9.0",
+    "standard": "^11.0.1"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.{js,jsx,mjs}",
+      "**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/config/jest/babelTransform.js",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^.+\\.(graphql)$": "<rootDir>/config/jest/graphqlTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json|graphql)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$",
+      "^.+\\.module\\.css$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.css$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "mjs",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "main": "lib/index.js",
+  "license": "ISC",
+  "homepage": "./"
 }

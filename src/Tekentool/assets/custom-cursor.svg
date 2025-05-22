@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="33px" viewBox="0 0 26 33" version="1.1">
+  <defs>
+    <path d="M12.7695272 11.3442979L9.17172131 10.5136789 15.8431801 3.84347369 18.915422 12.7631895 14.718271 11.7942008C14.0329938 14.7257536 13.9929149 17.5381081 14.59367 20.2415059 15.2180441 23.0511894 16.5352113 25.4203672 18.5555745 27.3716829L17.1661569 28.8102651C14.8620097 26.584864 13.3502551 23.8656834 12.6412959 20.6753668 11.9743464 17.6740943 12.0185445 14.5603252 12.7695272 11.3442979Z" id="path-1"/>
+    <filter x="-20.5%" y="-8.0%" width="182.1%" height="132.0%" filterUnits="objectBoundingBox" id="filter-2">
+      <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"/>
+    </filter>
+    <polygon id="path-3" points="3 -1.13686838e-13 11.6525549 6.3448502 7.34577827 7.58658563 4.12544617 10.7249675"/>
+    <filter x="-34.7%" y="-28.0%" width="215.6%" height="193.2%" filterUnits="objectBoundingBox" id="filter-4">
+      <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+      <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g id="Drawing-tool" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="exercise---selected-arrow" transform="translate(-1054.000000, -505.000000)">
+      <g id="drawing-tool" transform="translate(165.000000, 95.000000)">
+        <g id="pointer---arrow" transform="translate(888.000000, 413.000000)">
+          <g id="Combined-Shape" fill-rule="nonzero" transform="translate(14.043572, 16.326869) rotate(-297.000000) translate(-14.043572, -16.326869) ">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"/>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"/>
+          </g>
+          <g id="arrow">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"/>
+            <path stroke="#FFFFFF" stroke-width="1" d="M7.60487494 8.03225L3.73581106 11.8028548 2.38485615-1.07110378 12.7688198 6.54337474 7.60487494 8.03225Z" fill="#333333" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

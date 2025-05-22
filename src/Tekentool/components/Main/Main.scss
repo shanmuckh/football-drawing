@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.App-container {
+  user-select: none;
+  max-width: $appWidth;
+  max-height: $appHeight;
+  margin: 0 auto;
+  overflow: hidden;
+
+  * {
+    -webkit-user-drag: none;
+  }
+}
+
+.Canvas-isEditorMode {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden;
+
+  .canvas-container {
+    width: 100% !important;
+    height: 0 !important;
+    margin: 0 auto;
+    max-width: $canvasWidth;
+    min-width: 320px;
+    max-height: $canvasHeight;
+    padding-top: $canvasHeight / $canvasWidth * 100%;
+  }
+
+  .lower-canvas,
+  .upper-canvas {
+    max-height: $canvasHeight;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .Main {
+    display: flex;
+    max-height: $canvasHeight;
+  }
+
+  .Canvas-isEditorMode {
+    position: relative;
+    flex-shrink: 0;
+    max-width: $canvasWidth;
+
+    .canvas-container {
+      height: $canvasHeight !important;
+      padding: 0;
+    }
+  }
+}
